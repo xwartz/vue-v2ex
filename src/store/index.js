@@ -1,6 +1,6 @@
 import { EventEmitter } from 'events'
-  // import { Promise } from 'es6-promise'
-  // import fetch from 'whatwg-fetch'
+// import fetch from 'whatwg-fetch'
+// import { Promise } from 'es6-promise'
 
 const store = new EventEmitter()
 

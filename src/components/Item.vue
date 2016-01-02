@@ -61,6 +61,10 @@ export default {
     }
   }
 
+  .avatar:hover {
+    text-decoration: none;
+  }
+
   .node {
     display: inline-block;
     background-color: #f5f5f5;
@@ -68,7 +72,6 @@ export default {
     line-height: 10px;
     padding: 4px 4px 4px 4px;
     border-radius: 2px;
-    text-decoration: none;
     color: #999;
 
     &:hover {
@@ -95,7 +98,6 @@ export default {
     display: inline-block;
     padding: 2px 10px 2px 10px;
     border-radius: 12px;
-    text-decoration: none;
     margin-right: 5px;
     word-break: keep-all;
 
