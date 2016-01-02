@@ -39,3 +39,9 @@ export default {
 }
 </script>
 
+<style lang="sass">
+.list {
+  width: 680px;
+  margin: 0 auto;
+}
+</style>

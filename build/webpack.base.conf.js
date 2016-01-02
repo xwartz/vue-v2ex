@@ -42,8 +42,7 @@ module.exports = {
   },
   vue: {
     loaders: {
-      js: 'babel!eslint',
-      sass: 'css!sass-loader'
+      js: 'babel!eslint'
     }
   },
   devServer: {
