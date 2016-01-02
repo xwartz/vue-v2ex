@@ -112,4 +112,10 @@ export default {
     }
   }
 }
+
+@media screen and (max-width: 680px) {
+  .detail {
+    width: 75%;
+  }
+}
 </style>

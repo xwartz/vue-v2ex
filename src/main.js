@@ -2,8 +2,8 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import { length, fromNow } from './filter'
 
+import routers from './routers'
 import App from './components/App.vue'
-import ListView from './components/ListView.vue'
 
 Vue.use(Router)
 
@@ -15,10 +15,6 @@ Vue.filter('length', length)
 // routing
 var router = new Router()
 
-router.map({
-  '/': {
-    component: ListView
-  }
-})
+routers(router)
 
 router.start(App, '#app')

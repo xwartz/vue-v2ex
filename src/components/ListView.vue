@@ -1,5 +1,5 @@
 <template>
-  <div class="list" :class="{ loading: !items.length }">
+  <div class="list">
     <item
       v-for="item in items"
       :item="item"
@@ -38,10 +38,3 @@ export default {
   }
 }
 </script>
-
-<style lang="sass">
-.list {
-  width: 680px;
-  margin: 0 auto;
-}
-</style>

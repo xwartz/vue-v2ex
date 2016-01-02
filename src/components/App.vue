@@ -1,19 +1,22 @@
 <template>
   <div id="topics">
-    <!-- header -->
-    <section class="nav">
-      <ul class="list-ul">
-        <a v-link="{ query: {tab:'latest'} }">最新</a>
-        <a v-link="{ query: {tab:'hot'} }">最热</a>
-      </ul>
-    </section>
-
+    <v-header></v-header>
     <router-view
       class="view">
     </router-view>
 
   </div>
 </template>
+
+<script>
+import vHeader from './Header.vue'
+export default {
+  name: 'AppView',
+  components: {
+    vHeader
+  }
+}
+</script>
 
 <style lang="sass">
 html, body, div, span, p, a, img, ul, li {
@@ -34,6 +37,8 @@ body {
   font-family: "Helvetica Neue", "Luxi Sans", "DejaVu Sans", Tahoma, "Hiragino Sans GB", "Microsoft Yahei", sans-serif;
   font-size: 16px;
   color: #4d5256;
+  width: 680px;
+  margin: 0 auto;
 }
 
 a {
@@ -42,6 +47,12 @@ a {
   &:hover {
     text-decoration: underline;
     color: #4d5256;
+  }
+}
+
+@media screen and (max-width: 680px) {
+  body {
+    width: 100%;
   }
 }
 
