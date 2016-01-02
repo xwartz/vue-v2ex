@@ -1,13 +1,28 @@
 <template>
   <!-- header -->
   <section class="nav">
-    <ul class="list-ul">
-      <a v-link="{ name:'topics', query: { tab:'latest'} }">最新</a>
+    <ul class="tab" @click='tab'>
+      <a v-link="{ name:'topics', query: { tab:'latest'} }" class="active">最新</a>
       <a v-link="{ name:'topics', query: { tab:'hot'} }">最热</a>
     </ul>
   </section>
 
 </template>
+
+<script>
+export default {
+  name: 'NavView',
+  methods: {
+    tab (e) {
+      let tabs = document.querySelectorAll('.tab a')
+      for (let i = 0; i < tabs.length; i++) {
+        tabs[i].classList.remove('active')
+      }
+      e.target.classList.add('active')
+    }
+  }
+}
+</script>
 
 <style lang="sass">
   .nav {
