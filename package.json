@@ -9,7 +9,11 @@
     "test": "karma start build/karma.conf.js --single-run"
   },
   "dependencies": {
-    "vue": "^1.0.0"
+    "fetch": "^0.3.6",
+    "superagent": "^1.6.1",
+    "vue": "^1.0.0",
+    "vue-router": "^0.7.7",
+    "whatwg-fetch": "^0.10.1"
   },
   "devDependencies": {
     "babel-core": "^6.0.0",
@@ -35,6 +39,7 @@
     "karma-webpack": "^1.7.0",
     "phantomjs": "^1.9.19",
     "rimraf": "^2.5.0",
+    "sass-loader": "^3.1.2",
     "style-loader": "^0.13.0",
     "url-loader": "^0.5.7",
     "vue-hot-reload-api": "^1.2.0",

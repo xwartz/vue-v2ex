@@ -1,5 +1,11 @@
 var config = require('./webpack.base.conf')
 
-config.devtool = 'eval-source-map'
+config.devtool = 'source-map'
+// config.node = {
+//   fs: 'empty',
+//   net: 'empty',
+//   tls: 'empty',
+//   dns: 'empty'
+// }
 
 module.exports = config
