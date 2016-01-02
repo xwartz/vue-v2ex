@@ -1,4 +1,8 @@
 import { EventEmitter } from 'events'
+
+// import Latest from '../../api/latest.json'
+// import Hot from '../../api/hot.json'
+
   // import { Promise } from 'es6-promise'
   // import fetch from 'whatwg-fetch'
 
@@ -27,8 +31,10 @@ store.fetchItems = (api) => {
 }
 
 store.fetchItemsByTab = (tab) => {
+  // return tab === 'hot' ? Hot : Latest
+
   // const api = 'https://www.v2ex.com/api/topics/' + tab + '.json'
-  const api = '../api/' + tab + '.json'
+  const api = 'api/' + tab + '.json'
   return store.fetchItems(api)
 }
 
